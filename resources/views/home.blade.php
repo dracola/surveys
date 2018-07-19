@@ -14,7 +14,18 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="text-center">
+                                <a href="{{ route('users.index') }}" class="btn btn-primary">Users</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="text-center">
+                                <a href="{{ route('surveys.index') }}" class="btn btn-success">Surveys</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -19,6 +19,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- Datatables stylesheet -->
+    <link rel="stylesheet" href="/css/datatables.min.css">
 </head>
 <body>
     <div id="app">
@@ -71,9 +74,16 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <div class="container margin-top-20">
             @yield('content')
-        </main>
+        </div>
     </div>
+
+    <!-- jQuery -->
+    <script src="/js/jquery.min.js"></script>
+    <!-- DataTables -->
+    <script src="/js/datatables.min.js"></script>
+    <!-- App scripts -->
+    @stack('scripts')
 </body>
 </html>
